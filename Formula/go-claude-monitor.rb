@@ -5,20 +5,20 @@
 class GoClaudeMonitor < Formula
   desc "Claude Code usage monitor and analyzer"
   homepage "https://github.com/penwyp/go-claude-monitor"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/penwyp/go-claude-monitor/releases/download/v0.0.3/go-claude-monitor_0.0.3_darwin_amd64.tar.gz"
-      sha256 "9560197cb05bc97038135aa6add8d43a66906fad68a946d6ed9fa129fdf440a2"
+      url "https://github.com/penwyp/go-claude-monitor/releases/download/v0.0.4/go-claude-monitor_0.0.4_darwin_amd64.tar.gz"
+      sha256 "de427ecf2cdd050e5a7e000afe6959476467784d0f363f779e2b2712c19af37e"
 
       def install
         bin.install "go-claude-monitor"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/penwyp/go-claude-monitor/releases/download/v0.0.3/go-claude-monitor_0.0.3_darwin_arm64.tar.gz"
-      sha256 "0e85a0d7d94acc696aaf3d34ec50971e20892b561d4dfc120d6423acb19812e3"
+      url "https://github.com/penwyp/go-claude-monitor/releases/download/v0.0.4/go-claude-monitor_0.0.4_darwin_arm64.tar.gz"
+      sha256 "104e70a6d5c0a98933e7f0dbc0f73142271060e64734d9edba8f0e39aaac7ca5"
 
       def install
         bin.install "go-claude-monitor"
@@ -28,15 +28,15 @@ class GoClaudeMonitor < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/penwyp/go-claude-monitor/releases/download/v0.0.3/go-claude-monitor_0.0.3_linux_amd64.tar.gz"
-      sha256 "8ad0c42be13a5759debec6ce19b74fe4a6e07fb8f192b3feca2a81a48e6e27e4"
+      url "https://github.com/penwyp/go-claude-monitor/releases/download/v0.0.4/go-claude-monitor_0.0.4_linux_amd64.tar.gz"
+      sha256 "957f28358f1b14a0a880628c907c05478f343dc2d37333c4705f995afc68e5be"
       def install
         bin.install "go-claude-monitor"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/penwyp/go-claude-monitor/releases/download/v0.0.3/go-claude-monitor_0.0.3_linux_arm64.tar.gz"
-      sha256 "76d63c3c40585c7ae932b784e7f7166ff54b99d04e4642fdf5ac6afbcea3ef06"
+      url "https://github.com/penwyp/go-claude-monitor/releases/download/v0.0.4/go-claude-monitor_0.0.4_linux_arm64.tar.gz"
+      sha256 "115a88fe3f9fb55b0d11ebb946bf251b7174d4edd1765b731502f1261c1e22a7"
       def install
         bin.install "go-claude-monitor"
       end
